@@ -14,7 +14,7 @@ Spark
 Storm 科研
 机器学习
 自然语言处理
-计算机视觉 1
+计算机视觉 JAVA代码 1
 2
 3
 4
@@ -29,7 +29,7 @@ Storm 科研
 13
 14
 15
-import java.nio. &hellip;">
+import &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -129,7 +129,9 @@ import java.nio. &hellip;">
 <h2>科研</h2></li>
 <li>机器学习</li>
 <li>自然语言处理</li>
-<li>计算机视觉</li>
+<li>计算机视觉
+
+<h2>JAVA代码</h2></li>
 </ul>
 
 
@@ -163,6 +165,142 @@ import java.nio. &hellip;">
 </span><span class='line'>    <span class="o">}</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Python代码</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">scipy.sparse</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">scipy.optimize</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">softmax_cost</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">,</span> <span class="n">input_size</span><span class="p">,</span> <span class="n">lambda_</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">labels</span><span class="p">):</span>
+</span><span class='line'>    <span class="sd">&quot;&quot;&quot;</span>
+</span><span class='line'><span class="sd">    :param theta:</span>
+</span><span class='line'><span class="sd">    :param num_classes: the number of classes</span>
+</span><span class='line'><span class="sd">    :param input_size: the size N of input vector</span>
+</span><span class='line'><span class="sd">    :param lambda_: weight decay parameter</span>
+</span><span class='line'><span class="sd">    :param data: the N x M input matrix, where each column corresponds</span>
+</span><span class='line'><span class="sd">                 a single test set</span>
+</span><span class='line'><span class="sd">    :param labels: an M x 1 matrix containing the labels for the input data</span>
+</span><span class='line'><span class="sd">    &quot;&quot;&quot;</span>
+</span><span class='line'>    <span class="n">m</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</span><span class='line'>    <span class="n">theta</span> <span class="o">=</span> <span class="n">theta</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">num_classes</span><span class="p">,</span> <span class="n">input_size</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">theta_data</span> <span class="o">=</span> <span class="n">theta</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">theta_data</span> <span class="o">=</span> <span class="n">theta_data</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">theta_data</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">prob_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta_data</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta_data</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">indicator</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">sparse</span><span class="o">.</span><span class="n">csr_matrix</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">m</span><span class="p">),</span> <span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">)))))</span>
+</span><span class='line'>    <span class="n">indicator</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">indicator</span><span class="o">.</span><span class="n">todense</span><span class="p">())</span>
+</span><span class='line'>    <span class="n">cost</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">/</span> <span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">indicator</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">prob_data</span><span class="p">))</span> <span class="o">+</span> <span class="p">(</span><span class="n">lambda_</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">theta</span> <span class="o">*</span> <span class="n">theta</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">grad</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">/</span> <span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">indicator</span> <span class="o">-</span> <span class="n">prob_data</span><span class="p">)</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">transpose</span><span class="p">())</span> <span class="o">+</span> <span class="n">lambda_</span> <span class="o">*</span> <span class="n">theta</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">cost</span><span class="p">,</span> <span class="n">grad</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>C/C++ 代码</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+</pre></td><td class='code'><pre><code class='c++'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;string.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;math.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;pthread.h&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="cp">#define MAX_STRING 100</span>
+</span><span class='line'><span class="cp">#define EXP_TABLE_SIZE 1000</span>
+</span><span class='line'><span class="cp">#define MAX_EXP 6</span>
+</span><span class='line'><span class="cp">#define MAX_SENTENCE_LENGTH 1000</span>
+</span><span class='line'><span class="cp">#define MAX_CODE_LENGTH 40</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">const</span> <span class="kt">int</span> <span class="n">vocab_hash_size</span> <span class="o">=</span> <span class="mi">30000000</span><span class="p">;</span>  <span class="c1">// Maximum 30 * 0.7 = 21M words in the vocabulary</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">typedef</span> <span class="kt">float</span> <span class="n">real</span><span class="p">;</span>                    <span class="c1">// Precision of float numbers</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">struct</span> <span class="n">vocab_word</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">long</span> <span class="kt">long</span> <span class="n">cn</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="o">*</span><span class="n">point</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">char</span> <span class="o">*</span><span class="n">word</span><span class="p">,</span> <span class="o">*</span><span class="n">code</span><span class="p">,</span> <span class="n">codelen</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'><span class="kt">void</span> <span class="nf">InitUnigramTable</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">train_words_pow</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="kt">double</span> <span class="n">d1</span><span class="p">,</span> <span class="n">power</span> <span class="o">=</span> <span class="mf">0.75</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">table</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span> <span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="n">table_size</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">vocab_size</span><span class="p">;</span> <span class="n">a</span><span class="o">++</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">train_words_pow</span> <span class="o">+=</span> <span class="n">pow</span><span class="p">(</span><span class="n">vocab</span><span class="p">[</span><span class="n">a</span><span class="p">].</span><span class="n">cn</span><span class="p">,</span> <span class="n">power</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">d1</span> <span class="o">=</span> <span class="n">pow</span><span class="p">(</span><span class="n">vocab</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">cn</span><span class="p">,</span> <span class="n">power</span><span class="p">)</span> <span class="o">/</span> <span class="n">train_words_pow</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span> <span class="p">(</span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">table_size</span><span class="p">;</span> <span class="n">a</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">table</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">table_size</span> <span class="o">&gt;</span> <span class="n">d1</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>      <span class="n">d1</span> <span class="o">+=</span> <span class="n">pow</span><span class="p">(</span><span class="n">vocab</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">cn</span><span class="p">,</span> <span class="n">power</span><span class="p">)</span> <span class="o">/</span> <span class="n">train_words_pow</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;=</span> <span class="n">vocab_size</span><span class="p">)</span> <span class="n">i</span> <span class="o">=</span> <span class="n">vocab_size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 </div>
