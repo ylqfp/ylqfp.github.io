@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Research | LeoYu的技术博客]]></title>
   <link href="http://ylqfp.github.io/blog/categories/research/atom.xml" rel="self"/>
   <link href="http://ylqfp.github.io/"/>
-  <updated>2015-06-13T21:46:52+08:00</updated>
+  <updated>2015-06-13T21:48:53+08:00</updated>
   <id>http://ylqfp.github.io/</id>
   <author>
     <name><![CDATA[LeoYu]]></name>
@@ -35,7 +35,7 @@
 <li>机器学习</li>
 <li>自然语言处理</li>
 <li>计算机视觉
-```
+``` java
 import java.nio.channels.FileChannel;</li>
 </ul>
 
