@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Research | LeoYu的技术博客]]></title>
   <link href="http://ylqfp.github.io/blog/categories/research/atom.xml" rel="self"/>
   <link href="http://ylqfp.github.io/"/>
-  <updated>2015-06-13T23:06:43+08:00</updated>
+  <updated>2015-06-13T23:16:45+08:00</updated>
   <id>http://ylqfp.github.io/</id>
   <author>
     <name><![CDATA[LeoYu]]></name>
@@ -151,9 +151,7 @@ exit 0
 
 <h3>Alizee2</h3>
 
-<p>{% img /images/alizee2.jpg %}<br/>
-加cap之后：<br/>
-{% imgcap left /images/alizee2.jpg Alizee in China %}</p>
+<p>{% img /images/alizee2.jpg %}</p>
 ]]></content>
   </entry>
   
