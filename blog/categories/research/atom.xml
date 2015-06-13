@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Research | LeoYu的技术博客]]></title>
   <link href="http://ylqfp.github.io/blog/categories/research/atom.xml" rel="self"/>
   <link href="http://ylqfp.github.io/"/>
-  <updated>2015-06-13T15:21:09+08:00</updated>
+  <updated>2015-06-13T21:46:52+08:00</updated>
   <id>http://ylqfp.github.io/</id>
   <author>
     <name><![CDATA[LeoYu]]></name>
@@ -34,9 +34,28 @@
 <h2>科研</h2></li>
 <li>机器学习</li>
 <li>自然语言处理</li>
-<li>计算机视觉</li>
+<li>计算机视觉
+```
+import java.nio.channels.FileChannel;</li>
 </ul>
 
+
+<p>public interface CallbackInterface(){
+    public void dothings();
+    public void exeMethods();
+}</p>
+
+<p>public class Server1 {</p>
+
+<pre><code>public static void main(String[] args) {
+    // TODO Auto-generated method stub
+    System.out.println("hello world!!!");
+}
+</code></pre>
+
+<p>}</p>
+
+<p>```</p>
 ]]></content>
   </entry>
   
