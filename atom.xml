@@ -4,7 +4,7 @@
   <title><![CDATA[LeoYu的技术博客]]></title>
   <link href="http://ylqfp.github.io/atom.xml" rel="self"/>
   <link href="http://ylqfp.github.io/"/>
-  <updated>2015-06-13T21:52:49+08:00</updated>
+  <updated>2015-06-13T23:19:55+08:00</updated>
   <id>http://ylqfp.github.io/</id>
   <author>
     <name><![CDATA[LeoYu]]></name>
@@ -167,7 +167,7 @@
 <span class='line-number'>37</span>
 <span class='line-number'>38</span>
 <span class='line-number'>39</span>
-</pre></td><td class='code'><pre><code class='c++'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
 </span><span class='line'><span class="cp">#include &lt;stdlib.h&gt;</span>
 </span><span class='line'><span class="cp">#include &lt;string.h&gt;</span>
 </span><span class='line'><span class="cp">#include &lt;math.h&gt;</span>
@@ -208,6 +208,39 @@
 </span><span class='line'><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<h2>Shell</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#!/bin/bash</span>
+</span><span class='line'><span class="c"># Program:</span>
+</span><span class='line'><span class="c">#       This program shows &quot;Hello World!&quot; in your screen.</span>
+</span><span class='line'><span class="c"># History:</span>
+</span><span class='line'><span class="c"># 2005/08/23    VBird   First release</span>
+</span><span class='line'><span class="nv">PATH</span><span class="o">=</span>/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+</span><span class='line'><span class="nb">export </span>PATH
+</span><span class='line'><span class="nb">echo</span> -e <span class="s2">&quot;Hello World! \a \n&quot;</span>
+</span><span class='line'><span class="nb">exit </span>0
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>我的爱好</h2>
+
+<h3>Alizee1</h3>
+
+<p><img src="http://ylqfp.github.io/images/alizee1.jpg"></p>
+
+<h3>Alizee2</h3>
+
+<p><img src="http://ylqfp.github.io/images/alizee2.jpg"></p>
 ]]></content>
   </entry>
   

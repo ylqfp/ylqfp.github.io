@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Research | LeoYu的技术博客]]></title>
   <link href="http://ylqfp.github.io/blog/categories/research/atom.xml" rel="self"/>
   <link href="http://ylqfp.github.io/"/>
-  <updated>2015-06-13T23:16:45+08:00</updated>
+  <updated>2015-06-13T23:19:55+08:00</updated>
   <id>http://ylqfp.github.io/</id>
   <author>
     <name><![CDATA[LeoYu]]></name>
@@ -132,7 +132,7 @@ void InitUnigramTable() {
 
 <h2>Shell</h2>
 
-<pre><code class="shell">#!/bin/bash
+<pre><code class="sh">#!/bin/bash
 # Program:
 #       This program shows "Hello World!" in your screen.
 # History:
@@ -147,11 +147,11 @@ exit 0
 
 <h3>Alizee1</h3>
 
-<p>{% img /images/alizee1.jpg %}</p>
+<p><img src="/images/alizee1.jpg"></p>
 
 <h3>Alizee2</h3>
 
-<p>{% img /images/alizee2.jpg %}</p>
+<p><img src="/images/alizee2.jpg"></p>
 ]]></content>
   </entry>
   
