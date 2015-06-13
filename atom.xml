@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[LeoYu的技术博客]]></title>
+  <link href="http://ylqfp.github.io/atom.xml" rel="self"/>
+  <link href="http://ylqfp.github.io/"/>
+  <updated>2015-06-13T10:26:12+08:00</updated>
+  <id>http://ylqfp.github.io/</id>
+  <author>
+    <name><![CDATA[LeoYu]]></name>
+    <email><![CDATA[ylqfp@qq.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[First Blog]]></title>
+    <link href="http://ylqfp.github.io/blog/2015/06/13/first-blog/"/>
+    <updated>2015-06-13T08:25:27+08:00</updated>
+    <id>http://ylqfp.github.io/blog/2015/06/13/first-blog</id>
+    <content type="html"><![CDATA[<h1>这是我的第一篇文章</h1>
+
+<blockquote><p>知世故而不世故，知人性而包容万物。</p></blockquote>
+
+<p>本博客包含以下技术内容：</p>
+
+<h2>大数据&amp;&amp;并行</h2>
+
+<ul>
+<li>Hadoop</li>
+<li>Spark</li>
+<li>Storm
+
+<h2>科研</h2></li>
+<li>机器学习</li>
+<li>自然语言处理</li>
+<li>计算机视觉</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
