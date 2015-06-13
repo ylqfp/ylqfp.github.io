@@ -100,3 +100,6 @@ disqus_show_comment_count: true
 
 # Facebook Like
 #facebook_like: false
+
+weibo_user: 2185522864
+weibo_share: true
