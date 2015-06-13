@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Research | LeoYu的技术博客]]></title>
   <link href="http://ylqfp.github.io/blog/categories/research/atom.xml" rel="self"/>
   <link href="http://ylqfp.github.io/"/>
-  <updated>2015-06-13T21:52:49+08:00</updated>
+  <updated>2015-06-13T22:05:29+08:00</updated>
   <id>http://ylqfp.github.io/</id>
   <author>
     <name><![CDATA[LeoYu]]></name>
@@ -89,7 +89,7 @@ import scipy.optimize</p>
 
 <h2>C/C++ 代码</h2>
 
-<pre><code class="c++">#include &lt;stdio.h&gt;
+<pre><code class="cpp">#include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 #include &lt;string.h&gt;
 #include &lt;math.h&gt;
@@ -129,6 +129,31 @@ void InitUnigramTable() {
   }
 }
 </code></pre>
+
+<h2>Shell</h2>
+
+<pre><code class="shell">#!/bin/bash
+# Program:
+#       This program shows "Hello World!" in your screen.
+# History:
+# 2005/08/23    VBird   First release
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+echo -e "Hello World! \a \n"
+exit 0
+</code></pre>
+
+<h2>我的爱好</h2>
+
+<h3>Alizee1</h3>
+
+<p>{% img /images/alizee1.jpg %}</p>
+
+<h3>Alizee2</h3>
+
+<p>{% img /images/alizee2.jpg %}<br/>
+加cap之后：<br/>
+{% imgcap left /images/alizee2.jpg Alizee in China %}</p>
 ]]></content>
   </entry>
   
