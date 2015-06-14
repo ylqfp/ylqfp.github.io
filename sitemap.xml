@@ -28,9 +28,6 @@
     <loc>http://ylqfp.github.io/research/</loc>
   </url>
   <url>
-    <loc>http://ylqfp.github.io/blog/categories/research/</loc>
-  </url>
-  <url>
     <loc>http://ylqfp.github.io/tags/hadoop/</loc>
   </url>
   <url>
@@ -47,5 +44,8 @@
   </url>
   <url>
     <loc>http://ylqfp.github.io/tags/semantic/</loc>
+  </url>
+  <url>
+    <loc>http://ylqfp.github.io/blog/categories/research/</loc>
   </url>
 </urlset>
