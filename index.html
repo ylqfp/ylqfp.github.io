@@ -9,8 +9,8 @@
   <meta name="author" content="LeoYu">
 
   
-  <meta name="description" content="PySpider：一个国人编写的强大的网络爬虫系统并带有强大的WebUI。采用Python语言编写，分布式架构，支持多种数据库后端，强大的WebUI支持脚本编辑器，任务监视器，项目管理器以及结果查看器。在线示例：http://demo.pyspider.org/
-- Write script in &hellip;">
+  <meta name="description" content="介绍 PySpider：一个国人编写的强大的网络爬虫系统并带有强大的WebUI。采用Python语言编写，分布式架构，支持多种数据库后端，强大的WebUI支持脚本编辑器，任务监视器，项目管理器以及结果查看器。在线示例：http://demo.pyspider.org/
+- Write script &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -94,13 +94,40 @@
   </header>
 
 
-  <div class="entry-content"><p>PySpider：一个国人编写的强大的网络爬虫系统并带有强大的WebUI。采用Python语言编写，分布式架构，支持多种数据库后端，强大的WebUI支持脚本编辑器，任务监视器，项目管理器以及结果查看器。在线示例：<a href="http://demo.pyspider.org/">http://demo.pyspider.org/</a>
+  <div class="entry-content"><h1>介绍</h1>
+
+<p>PySpider：一个国人编写的强大的网络爬虫系统并带有强大的WebUI。采用Python语言编写，分布式架构，支持多种数据库后端，强大的WebUI支持脚本编辑器，任务监视器，项目管理器以及结果查看器。在线示例：<a href="http://demo.pyspider.org/">http://demo.pyspider.org/</a>
 - Write script in python with powerful API
 - Powerful WebUI with script editor, task monitor, project manager and result viewer
 - MySQL, MongoDB, SQLite 作为后台数据库
 - Javascript 页面支持
 - Task priority, retry, periodical and recrawl by age or marks in index page (like update time)
 - Distributed architecture</p>
+
+<h1>功能</h1>
+
+<p>webui</p>
+
+<p>web的可视化任务监控
+web脚本编写，单步调试
+异常捕获、log捕获，print捕获等
+scheduler</p>
+
+<p>任务优先级
+周期定时任务
+流量控制
+基于时间周期 或 前链标签（例如更新时间）的重抓取调度
+fetcher</p>
+
+<p>dataurl支持，用于假抓取模拟传递
+method, header, cookie, proxy, etag, last_modified, timeout 等等抓取调度控制
+可以通过适配类似 phantomjs 的webkit引擎支持渲染
+processor</p>
+
+<p>内置的pyquery，以jQuery解析页面
+在脚本中完全控制调度抓取的各项参数
+可以向后链传递信息
+异常捕获</p>
 </div>
   
   
