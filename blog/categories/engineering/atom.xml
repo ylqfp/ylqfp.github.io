@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Engineering | LeoYu的技术博客]]></title>
+  <link href="http://ylqfp.github.io/blog/categories/engineering/atom.xml" rel="self"/>
+  <link href="http://ylqfp.github.io/"/>
+  <updated>2015-06-14T10:06:08+08:00</updated>
+  <id>http://ylqfp.github.io/</id>
+  <author>
+    <name><![CDATA[LeoYu]]></name>
+    <email><![CDATA[ylqfp@qq.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Pyspider]]></title>
+    <link href="http://ylqfp.github.io/blog/2015/06/14/pyspider/"/>
+    <updated>2015-06-14T10:01:55+08:00</updated>
+    <id>http://ylqfp.github.io/blog/2015/06/14/pyspider</id>
+    <content type="html"><![CDATA[<p>PySpider：一个国人编写的强大的网络爬虫系统并带有强大的WebUI。采用Python语言编写，分布式架构，支持多种数据库后端，强大的WebUI支持脚本编辑器，任务监视器，项目管理器以及结果查看器。在线示例：<a href="http://demo.pyspider.org/">http://demo.pyspider.org/</a>
+- Write script in python with powerful API
+- Powerful WebUI with script editor, task monitor, project manager and result viewer
+- MySQL, MongoDB, SQLite 作为后台数据库
+- Javascript 页面支持
+- Task priority, retry, periodical and recrawl by age or marks in index page (like update time)
+- Distributed architecture</p>
+]]></content>
+  </entry>
+  
+</feed>

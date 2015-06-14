@@ -4,7 +4,7 @@
   <title><![CDATA[LeoYu的技术博客]]></title>
   <link href="http://ylqfp.github.io/atom.xml" rel="self"/>
   <link href="http://ylqfp.github.io/"/>
-  <updated>2015-06-14T09:59:22+08:00</updated>
+  <updated>2015-06-14T10:06:08+08:00</updated>
   <id>http://ylqfp.github.io/</id>
   <author>
     <name><![CDATA[LeoYu]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Pyspider]]></title>
+    <link href="http://ylqfp.github.io/blog/2015/06/14/pyspider/"/>
+    <updated>2015-06-14T10:01:55+08:00</updated>
+    <id>http://ylqfp.github.io/blog/2015/06/14/pyspider</id>
+    <content type="html"><![CDATA[<p>PySpider：一个国人编写的强大的网络爬虫系统并带有强大的WebUI。采用Python语言编写，分布式架构，支持多种数据库后端，强大的WebUI支持脚本编辑器，任务监视器，项目管理器以及结果查看器。在线示例：<a href="http://demo.pyspider.org/">http://demo.pyspider.org/</a>
+- Write script in python with powerful API
+- Powerful WebUI with script editor, task monitor, project manager and result viewer
+- MySQL, MongoDB, SQLite 作为后台数据库
+- Javascript 页面支持
+- Task priority, retry, periodical and recrawl by age or marks in index page (like update time)
+- Distributed architecture</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building Blog With Octopress]]></title>
+    <link href="http://ylqfp.github.io/blog/2015/06/14/building-blog-with-octopress/"/>
+    <updated>2015-06-14T10:01:38+08:00</updated>
+    <id>http://ylqfp.github.io/blog/2015/06/14/building-blog-with-octopress</id>
+    <content type="html"><![CDATA[<p>*** Tags
+<a href="http://yang3wei.github.io/blog/2013/01/30/zhuan-zai-wei-octopress-tian-jia-biao-qian-yun/">http://yang3wei.github.io/blog/2013/01/30/zhuan-zai-wei-octopress-tian-jia-biao-qian-yun/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning to Rank]]></title>
+    <link href="http://ylqfp.github.io/blog/2015/06/14/learning-to-rank/"/>
+    <updated>2015-06-14T10:01:06+08:00</updated>
+    <id>http://ylqfp.github.io/blog/2015/06/14/learning-to-rank</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[LDA]]></title>
+    <link href="http://ylqfp.github.io/blog/2015/06/14/lda/"/>
+    <updated>2015-06-14T10:00:48+08:00</updated>
+    <id>http://ylqfp.github.io/blog/2015/06/14/lda</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bayesian]]></title>
+    <link href="http://ylqfp.github.io/blog/2015/06/14/bayesian/"/>
+    <updated>2015-06-14T10:00:42+08:00</updated>
+    <id>http://ylqfp.github.io/blog/2015/06/14/bayesian</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Structured Learning]]></title>
+    <link href="http://ylqfp.github.io/blog/2015/06/14/structured-learning/"/>
+    <updated>2015-06-14T10:00:29+08:00</updated>
+    <id>http://ylqfp.github.io/blog/2015/06/14/structured-learning</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SimApp: A Framework for Detecting Similar Mobile Applications by Online Kernel Learning]]></title>
